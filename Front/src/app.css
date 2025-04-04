@@ -1,0 +1,8 @@
+@import "./nord.css";
+@import "tailwindcss";
+@import "@skeletonlabs/skeleton";
+@import "@skeletonlabs/skeleton/optional/presets";
+
+@plugin '@tailwindcss/typography';
+
+@source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
