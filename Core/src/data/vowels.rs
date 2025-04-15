@@ -16,8 +16,8 @@ impl Vowels {
         out
     }
 
-    pub fn vowel_to_hiragana(vowel: Vowels) -> &'static str {
-        match vowel {
+    pub fn vowel_to_hiragana(&self) -> &'static str {
+        match self {
             Vowels::A => "あ",
             Vowels::I => "い",
             Vowels::U => "う",
@@ -26,8 +26,8 @@ impl Vowels {
             Vowels::N => "ん",
         }
     }
-    pub fn vowel_to_katakana(vowel: Vowels) -> &'static str {
-        match vowel {
+    pub fn vowel_to_katakana(&self) -> &'static str {
+        match self {
             Vowels::A => "ア",
             Vowels::I => "イ",
             Vowels::U => "ウ",
@@ -36,8 +36,8 @@ impl Vowels {
             Vowels::N => "ン",
         }
     }
-    pub fn vowel_to_half_katakana(vowel: Vowels) -> &'static str {
-        match vowel {
+    pub fn vowel_to_half_katakana(&self) -> &'static str {
+        match self {
             Vowels::A => "ｱ",
             Vowels::I => "ｲ",
             Vowels::U => "ｳ",

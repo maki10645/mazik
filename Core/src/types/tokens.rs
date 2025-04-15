@@ -1,6 +1,7 @@
 use serde::{Deserialize, Serialize};
 use strum::{Display, EnumString};
 
+// 割り当て先のキーとシーケンス
 #[derive(Serialize, Deserialize, Debug)]
 #[allow(non_snake_case)]
 pub struct Assignable {
@@ -8,6 +9,7 @@ pub struct Assignable {
     pub Sequence: String,
 }
 
+// Tokenとして割り当て可能なキー一覧
 #[derive(EnumString, Display, Serialize, Deserialize, Debug)]
 pub enum AssignableTokens {
     Q,

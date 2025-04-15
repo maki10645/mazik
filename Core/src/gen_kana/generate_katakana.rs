@@ -1,5 +1,6 @@
 use crate::{consonants::Consonants, vowels::Vowels};
 
+// ConsonantsとVowelsを組み合わせてカタカナを生成
 pub fn gen_katakana(consonant: Consonants, vowel: Vowels) -> &'static str {
     match consonant {
         Consonants::K => match vowel {

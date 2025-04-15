@@ -1,5 +1,6 @@
 use crate::{consonants::Consonants, vowels::Vowels};
 
+// ConsonantsとVowelsを組み合わせて半角カタカナを生成
 pub fn gen_half_katakana(consonant: Consonants, vowel: Vowels) -> &'static str {
     match consonant {
         Consonants::K => match vowel {

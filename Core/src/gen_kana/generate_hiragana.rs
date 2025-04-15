@@ -1,5 +1,6 @@
 use crate::{consonants::Consonants, vowels::Vowels};
 
+// ConsonantsとVowelsを組み合わせてひらがなを生成
 pub fn gen_hiragana(consonant: Consonants, vowel: Vowels) -> &'static str {
     match consonant {
         Consonants::K => match vowel {

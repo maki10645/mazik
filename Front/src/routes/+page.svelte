@@ -1,4 +1,13 @@
 <script lang="ts">
+  import init, { gen_google_ime_runner } from "$lib/wasm/Core";
+  import { onMount } from "svelte";
+
+  let out = $state("");
+
+  onMount(async () => {
+    await init();
+    out = gen_google_ime_runner();
+  });
 </script>
 
 <div class="flex min-h-screen h-1 items-center justify-center">
@@ -28,6 +37,7 @@
   <div
     class="flex flex-col card w-[512px] h-[640px] preset-filled-surface-100-900 p-4 mx-8 border border-surface-500"
   >
-    <h1>world</h1>
+    <h1 class="h3 text-surface-50">world</h1>
   </div>
+  <h1>{out}</h1>
 </div>

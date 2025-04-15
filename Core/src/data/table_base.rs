@@ -1,4 +1,4 @@
-static GOOGLE_IME_TABLE_BASE: &str = "la	ぁ
+pub static GOOGLE_IME_TABLE_BASE: &str = "la	ぁ
 li	ぃ
 lu	ぅ
 le	ぇ
@@ -73,7 +73,7 @@ e	え
 o	お
 ";
 
-static CORVUS_SKK_TABLE_BASE: &str = "la	ぁ	ァ	ｧ	0
+pub static CORVUS_SKK_TABLE_BASE: &str = "la	ぁ	ァ	ｧ	0
 li	ぃ	ィ	ｨ	0
 lu	ぅ	ゥ	ｩ	0
 le	ぇ	ェ	ｪ	0
