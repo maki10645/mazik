@@ -9,7 +9,8 @@
     <h1 class="h3 text-surface-50">MAZIK WebUIの使い方</h1>
     <p class="pt-8 text-surface-50 font-motomachi">
       右にあるウィンドウのフォームを適切に入力し<br
-      />作成ボタンを押したあとにGoogleIMEかCorvusSKKかを選択していただくとダウンロードが開始します。
+      />作成ボタンを押したあとにGoogleIMEかCorvusSKKかを選択していただくとダウンロードが開始します。<br
+      />なお現在はGoogleIME用の物しか出力できないのでそんな選択肢はありません
     </p>
     <p class="pt-8 text-surface-50 font-motomachi">以下はフォームの説明です</p>
 
