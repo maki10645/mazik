@@ -34,9 +34,17 @@
     `data:text/plain;charset=utf-8,${encodeURIComponent(out)}`,
   );
 
-  const googleImeHadler = async () => {
+  const googleImeHandler = async () => {
     await init();
     out = gen_google_ime_table_runner(azikConfig);
+  };
+
+  const resetAllHandler = () => {
+    tokens = "";
+    sequences = "";
+    hatsuon = "";
+    sokuon = "";
+    out = "";
   };
 </script>
 
@@ -55,25 +63,29 @@
   <label class="label">
     <span class="label-text h5">撥音</span>
     <hr class="hr border-surface-500 pb-5" />
-    <input class="input" type="text" placeholder="c" bind:value={hatsuon} />
+    <input class="input" type="text" bind:value={hatsuon} />
   </label>
   <label class="label">
     <span class="label-text h5">促音</span>
     <hr class="hr border-surface-500 pb-5" />
-    <input class="input" type="text" placeholder="c" bind:value={sokuon} />
+    <input class="input" type="text" bind:value={sokuon} />
   </label>
   <div class="flex flex-col items-center justify-center space-y-16">
     <div class="flex items-center justify-center space-x-4">
       {#if out === ""}
         <button
-          class="btn preset-filled-primary-500 w-42 h-12"
-          onclick={googleImeHadler}>Create</button
+          class="btn preset-filled-primary-500 h-12"
+          onclick={googleImeHandler}>Create4GoogleIME</button
         >
       {:else}
         <a
           class="btn preset-filled-primary-500 w-42 h-12"
           href={downloadGoogleIME}
           download="AzikForGoogleIme.txt">Download</a
+        >
+        <button
+          class="btn preset-filled-primary-500 w-42 h-12"
+          onclick={resetAllHandler}>ResetParams</button
         >
       {/if}
     </div>
