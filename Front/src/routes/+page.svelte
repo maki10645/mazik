@@ -6,13 +6,13 @@
   <div
     class="flex flex-col card h-[640px] preset-filled-surface-100-900 p-4 mx-8 border border-surface-500"
   >
-    <h1 class="h3 text-surface-50">MAZIK WebUIの使い方</h1>
-    <p class="pt-8 text-surface-50 font-motomachi">
+    <h1 class="h3">MAZIK WebUIの使い方</h1>
+    <p class="pt-8 font-motomachi">
       右にあるウィンドウのフォームを適切に入力し<br
       />Create4GoogleIMEかCreate4CorvusSKKかを選択していただくとダウンロードが開始します。<br
       />なお現在はGoogleIME用の物しか出力できないのでそんな選択肢はありません
     </p>
-    <p class="pt-8 text-surface-50 font-motomachi">以下はフォームの説明です</p>
+    <p class="pt-8 font-motomachi">以下はフォームの説明です</p>
 
     <hr class="hr border-surface-500" />
 

@@ -6,5 +6,3 @@
 @plugin '@tailwindcss/typography';
 
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
-
-@custom-variant dark (&:where(.dark, .dark *));
