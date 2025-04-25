@@ -1,0 +1,15 @@
+{
+  "name": "Core",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "Core_bg.wasm",
+    "Core.js",
+    "Core.d.ts"
+  ],
+  "main": "Core.js",
+  "types": "Core.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
